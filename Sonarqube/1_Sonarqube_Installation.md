@@ -58,7 +58,11 @@ useradd sonar
 sonar           ALL=(ALL)       NOPASSWD: ALL
 chown -R sonar:sonar /opt/sonarqube-9.7
 chmod -R 775 /opt/sonarqube-9.7
-
+## go to the path mentioned and add the line given below in sonar.sh file
+path: "/opt/sonarqube971/bin/linux-x86-64/sonar.sh"
+     regexp: "RUN_AS_USER=sonar"
+     insertafter: "#RUN_AS_USER="
+     line: "RUN_AS_USER=sonar"
 # Switch user to sonar
 su - sonar
 cd /opt/sonarqube-9.7
