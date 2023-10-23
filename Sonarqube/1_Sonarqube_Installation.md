@@ -58,7 +58,7 @@ useradd sonar
 sonar           ALL=(ALL)       NOPASSWD: ALL
 chown -R sonar:sonar /opt/sonarqube-9.7
 chmod -R 775 /opt/sonarqube-9.7
-
+## my isp problem ,connect to mobile data
 # Switch user to sonar
 su - sonar
 cd /opt/sonarqube-9.7
